@@ -134,3 +134,7 @@ targaryenCourtSession.complaintPresented({ severity: 12 });
 let lannisterCourtSession = new CourtSession(new LannisterFactory());
 lannisterCourtSession.complaintPresented({ severity: 7 });
 lannisterCourtSession.complaintPresented({ severity: 11 });
+
+/**
+ *
+ */
