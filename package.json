@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
 }
