@@ -63,7 +63,7 @@ with the director, and get the result from the builder.
 
 ### Structure
 
-- The `BasBuilder` interface declares product construction steps that are common to all types of builders.
+- The `BaseBuilder` interface declares product construction steps that are common to all types of builders.
 - `HouseBuilder` a concrete builder provide different implementations of the construction steps. Concrete builders may produce products that don't follow the common interface.
 - `House` products are resulting objects. Products constructed by different builders don't have to belong to the same class hierarchy or interface.
 - The `HouseDirector` class defines the order in which to call construction steps, so you can create and reuse specific configurations of products.
