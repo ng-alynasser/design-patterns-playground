@@ -1,4 +1,7 @@
-###Structure
+### Definition
+**Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+
+### Structure
 
 - The `Dialog` declares the interface, which is common to all objects that can be produced by the `DialogBaseFactory` and its subclasses.
 - `WindowsDialog` and `WebDialog` are different implementations of the `Dialog` interface.
