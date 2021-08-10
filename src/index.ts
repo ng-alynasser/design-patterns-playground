@@ -6,6 +6,8 @@ import { WindowsFactory } from "./catalog/creational/abstract-factory-pattern/wi
 import { MacFactory } from "./catalog/creational/abstract-factory-pattern/mac-factory";
 import { Button } from "./catalog/creational/abstract-factory-pattern/button";
 import { CheckBox } from "./catalog/creational/abstract-factory-pattern/checkbox";
+import { HouseBuilder } from "./catalog/creational/builder-pattern/house-builder";
+import { HouseDirector } from "./catalog/creational/builder-pattern/house-director";
 
 /**
  * Factory Method Pattern Usage
@@ -50,3 +52,13 @@ button = guiFactory.createButton();
 checkbox = guiFactory.createCheckbox();
 button.onClick();
 checkbox.onCheck();
+
+/**
+ * Builder Pattern Usage
+ */
+
+const houseBuilder = new HouseBuilder();
+const houseDirector = new HouseDirector(houseBuilder);
+
+houseDirector.buildFullFeaturedHouse();
+console.log(houseBuilder.getHouse());
