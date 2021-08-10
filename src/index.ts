@@ -52,13 +52,3 @@ button = guiFactory.createButton();
 checkbox = guiFactory.createCheckbox();
 button.onClick();
 checkbox.onCheck();
-
-/**
- * Builder Pattern Usage
- */
-
-const houseBuilder = new HouseBuilder();
-const houseDirector = new HouseDirector(houseBuilder);
-
-houseDirector.buildFullFeaturedHouse();
-console.log(houseBuilder.getHouse());
